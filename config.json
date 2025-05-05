@@ -31,12 +31,12 @@
   "PREFIX": "$",
   "ADMINBOT": [
     "100086928967994",
-    "61565554550708"
+    ""
   ],
   "DESIGN": {
     "Title": "BOTPACK",
     "Theme": "BLUE",
-    "Admin": "FIXED BY JONELL",
+    "Admin": "KUZ3(Hoy Giatay)",
     "Setup": {
       "Info": "Design your own custom terminal Titlebar for the title and must contain no numbers",
       "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Orange, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, Purple, Rainbow, and Hacker themes to enhance your terminal logs."
