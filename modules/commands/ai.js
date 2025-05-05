@@ -16,7 +16,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
     const { messageID, threadID } = event;
     const id = event.senderID;
 
-    const apiUrl = `https://jonellccprojectapis10.adaptable.app/api/gptconvo?ask=${encodeURIComponent(event.body)}&id=${id}`;
+    const apiUrl = `https://jonell01-ccprojectsapihshs.hf.space/api/chatgpt?input=${encodeURIComponent(event.body)}&id=${id}`;
 
     try {
         const lad = await api.sendMessage("🔎 Searching for an answer. Please wait...", threadID, messageID);
@@ -37,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     if (!args[0]) return api.sendMessage("Please provide your question.\n\nExample: ai what is the solar system?", threadID, messageID);
 
-    const apiUrl = `https://jonellccprojectapis10.adaptable.app/api/gptconvo?ask=${encodeURIComponent(args.join(" "))}&id=${id}`;
+    const apiUrl = `https://jonell01-ccprojectsapihshs.hf.space/api/chatgpt?input=${encodeURIComponent(args.join(" "))}&id=${id}`;
 
     const lad = await api.sendMessage("🔎 Searching for an answer. Please wait...", threadID, messageID);
 
@@ -48,7 +48,7 @@ module.exports.run = async function ({ api, event, args }) {
             if (attachment.type === "photo") {
                 const imageURL = attachment.url;
 
-                const geminiUrl = `https://joncll.serv00.net/chat.php?ask=${encodeURIComponent(args.join(" "))}&imgurl=${encodeURIComponent(imageURL)}`;
+                const geminiUrl = `https://jonell01-ccprojectsapihshs.hf.space/api/geminiversion2?ask=${encodeURIComponent(args.join(" "))}&imgurl=${encodeURIComponent(imageURL)}`;
                 const response = await axios.get(geminiUrl);
                 const { vision } = response.data;
 
