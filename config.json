@@ -26,12 +26,12 @@
     "resend.js"
   ],
   "eventDisabled": [],
-  "OWNER": "OWNER OF BOT",
-  "BOTNAME": "BOTNAME HERE",
-  "PREFIX": "?",
+  "OWNER": "KUZ3",
+  "BOTNAME": "X'N BOT",
+  "PREFIX": "$",
   "ADMINBOT": [
-    "UID HERE ADMIN",
-    ""
+    "100086928967994",
+    "61565554550708"
   ],
   "DESIGN": {
     "Title": "BOTPACK",
