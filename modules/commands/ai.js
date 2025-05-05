@@ -16,7 +16,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
     const { messageID, threadID } = event;
     const id = event.senderID;
 
-    const apiUrl = `https://jonell01-ccprojectsapihshs.hf.space/api/chatgpt?input=${encodeURIComponent(event.body)}&id=${id}`;
+    const apiUrl = `https://kaiz-apis.gleeze.com/api/catgpt?ask=${encodeURIComponent(event.body)}&uid=${uid}`;
 
     try {
         const lad = await api.sendMessage("🔎 Searching for an answer. Please wait...", threadID, messageID);
@@ -37,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     if (!args[0]) return api.sendMessage("Please provide your question.\n\nExample: ai what is the solar system?", threadID, messageID);
 
-    const apiUrl = `https://jonell01-ccprojectsapihshs.hf.space/api/chatgpt?input=${encodeURIComponent(args.join(" "))}&id=${id}`;
+    const apiUrl = `https://kaiz-apis.gleeze.com/api/catgpt?ask=${encodeURIComponent(args.join(" "))}&uid=${uid}`;
 
     const lad = await api.sendMessage("🔎 Searching for an answer. Please wait...", threadID, messageID);
 
