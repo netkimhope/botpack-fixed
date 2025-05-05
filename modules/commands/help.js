@@ -4,13 +4,13 @@ module.exports.config = {
   hasPermission: 0,
   credits: "developer",
   description: "Beginner's Guide",
-  usePrefix: true,
+  usePrefix: false,
   commandCategory: "guide",
   usages: "[Shows Commands]",
   cooldowns: 5,
   envConfig: {
 		autoUnsend: true,
-		delayUnsend: 60
+		delayUnsend: 100
 	}
 };
 
@@ -161,7 +161,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
     const fs = require("fs-extra");
     const imgP = [];
     const img = [
-      "https://i.ibb.co/VcNdjtmr/help.png"
+      ""
     ];
     const path = __dirname + "/cache/menu.png";
     const rdimg = img[Math.floor(Math.random() * img.length)];
