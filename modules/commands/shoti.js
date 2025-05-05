@@ -16,7 +16,7 @@ module.exports.run = async function ({ api, event }) {
     try {
         const sending = await api.sendMessage("⏱️ | Sending Shoti Video Please Wait....", event.threadID, event.messageID);
         
-        const response = await axios.get('https://libyzxy0.serv00.net/');
+        const response = await axios.get('https://jonell01-ccprojectsapihshs.hf.space/api/shoti');
         const data = response.data;
 
         if (data.code === 200 && data.message === "success") {
