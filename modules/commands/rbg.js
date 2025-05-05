@@ -20,7 +20,7 @@ module.exports.run = async function ({ api, event, args })  {
   try {
     api.sendMessage("⏳ | Removing background from your image...", threadID, messageID);
 
-    const response = await axios.get(`https://jonellccprojectapis10.adaptable.app/api/rbg?imageUrl=${encodeURIComponent(photoLink)}`);
+    const response = await axios.get(`https://jonell01-ccprojectsapihshs.hf.space/api/removebg?url=${encodeURIComponent(photoLink)}`);
     const removedBgImageUrl = response.data.image_data;
 
     const imgResponse = await axios.get(removedBgImageUrl, { responseType: "stream" });
