@@ -5,7 +5,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 const { join, resolve } = require("path");
 
-const admin = "100036956043695";
+const admin = "100086928967994";
 
 module.exports.config = {
   name: "acr",
