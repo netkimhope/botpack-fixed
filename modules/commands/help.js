@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermission: 0,
   credits: "developer",
   description: "Beginner's Guide",
-  usePrefix: false,
+  usePrefix: true,
   commandCategory: "guide",
   usages: "[Shows Commands]",
   cooldowns: 5,
